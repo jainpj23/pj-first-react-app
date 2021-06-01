@@ -45,7 +45,7 @@ function Cake() {
   }*/
   
  return(
-    <div className="row col-sm-12">
+    <div className="row col-sm-12 justify-content-center">
         
             {data.map(item => (
               <div className="col-sm-2" key={item.cakeid}>
