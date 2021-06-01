@@ -28,7 +28,12 @@ class Register extends Component {
 
    render() {
      const {data} = this.state;
-
+     const mystyle={
+        padding: "40px",
+background: "lightblue",
+"border-radius": "10px",
+"box-sizing": "border-box"
+    };
      return(
 
       <div className="row">
@@ -39,7 +44,7 @@ class Register extends Component {
           </div>
    }
           <div className="col-sm-3"></div>
-          <div className="col-sm-6">
+          <div className="col-sm-6" style={mystyle}>
       <form onSubmit = {this.onSubmit} >
 
           <label htmlFor="username"><b>Username</b></label>
@@ -59,6 +64,14 @@ class Register extends Component {
       </form>
       </div>
       <div className="col-sm-3"></div>
+
+      
+
+
+
+      
+     
+
     </div>
 
      );
