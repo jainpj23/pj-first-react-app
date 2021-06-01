@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import data from './data.json'
+
 function Cake() {
-  const [error, setError] = useState(null);
+  console.log(data);
+  /*const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
 
@@ -40,7 +42,21 @@ function Cake() {
         ))}
       </ul>
     );
-  }
+  }*/
+  
+ return(
+    <div className="row col-sm-12">
+        
+            {data.map(item => (
+              <div className="col-sm-2" key={item.cakeid} className="col-sm-3">
+                <p className="text-center"><img src={item.image} style={{width:"100%",height:"200px"}}/>
+                <br/>Name : {item.name}<br/>Price : {item.price} <br/> Discount: 10%</p>
+              </div>
+            ))}
+          
+    </div>
+ );
+
 }
 
 

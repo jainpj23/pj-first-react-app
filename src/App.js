@@ -8,6 +8,8 @@ function App() {
     <div>
         <Header></Header>
         <br/>
+        <Cake></Cake>
+        <br/>
         <Register></Register>
 
     </div>
